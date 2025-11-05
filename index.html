@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio </title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Font Awesome for glowing icons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Scary Intro Screen -->
+  <div id="scary-intro" class="scary-intro">
+    <div class="scary-content">
+      <h1 class="scary-title">⚠️ WARNING ⚠️</h1>
+      <p class="scary-text">You are about to enter a realm of the unknown...</p>
+      <p class="scary-text">Proceed only if you dare to face what lies beyond.</p>
+      <button id="enter-site" class="enter-button">Enter If You Dare</button>
+    </div>
+  </div>
+
+  <!-- Background video: 8K Ultra High Quality optimized -->
+  <video autoplay muted loop playsinline preload="auto" id="bg-video" poster="">
+    <source src="" type="video/mp4">
+    Your browser does not support video playback.
+  </video>
+
+  <!-- Tubes Cursor Canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Secondary Animated Video Background (after mouse effect) -->
+  <video autoplay muted loop playsinline preload="auto" id="secondary-bg-video" poster="">
+    <source src="kanekiwall.mp4" type="video/mp4">
+    Your browser does not support video playback.
+  </video>
+
+  <!-- Particles (stars) over the video -->
+  <div id="particles-js"></div>
+
+  <header class="topbar">
+    <h1 class="brand">My Portfolio</h1>
+  </header>
+
+  <main class="content">
+    <!-- Avatar: can be .jpg/.png or .gif -->
+    <!-- -- تعليق عربي: غيّر src إلى رابط صورتك أو اسم الملف داخل المجلد -- -->
+    <img class="avatar" src="kaneki.gif" alt="My Photo">
+
+    <!-- Intro text -->
+    <h2>Welcome to my profile Re kaneki </h2>
+    <p>If you want to join our family in Discord, join below. .</p>
+
+    <!-- Discord card -->
+    <section class="discord-card">
+      <h3>Join our Discord</h3>
+      <img id="server-icon" class="server-img" src="your-server-image.png" alt="Server Icon" style="display:block">
+      <p id="server-name">My Server</p>
+      <a id="invite-link" href="https://discord.gg/4XtJvqGB" target="_blank" class="join-btn">🎮 Welcome to Discord</a>
+    </section>
+
+    <!-- Glowing Social Icons -->
+    <section class="social-icons-container">
+      <a href="https://www.instagram.com/real_moriarty/" target="_blank">
+        <i class="fa fa-instagram" id="instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@HamzaGamesTY" target="_blank">
+        <i class="fa fa-youtube-play" id="youtube"></i>
+      </a>
+      <a href="https://www.tiktok.com/@hamzagamesty" target="_blank">
+        <i class="fa fa-tiktok" id="tiktok"></i>
+      </a>
+    </section>
+
+    <!-- Music player visible -->
+    <!-- Called of font style  file -->
+
+<link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+
+
+    <!-- 🎵 Custom Red Themed Audio Player -->
+<h2>Wellcome to Rofa Music store</h2>
+<div class="container-audio">
+  
+  <!-- 👇 أضف هذا السطر لعرض الجيف -->
+  <img src="toka.gif" alt="Music cover" class="music-cover">
+
+  <audio controls loop>
+      <source src="taftaf.mp3" type="audio/mp3">
+      Your browser does not support the audio tag
+  </audio>
+</div>
+</div>
+
+<style>
+/* 🔥 تصميم مشغل الصوت */
+.custom-audio-player {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  background: linear-gradient(90deg, rgba(255,0,0,0.2), rgba(0,0,0,0.5));
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  max-width: 900px;
+  margin: 20px auto;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-audio-player:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
+}
+
+/* الصورة الجانبية */
+.music-cover {
+  width: 130px;
+  height: 130px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+  border: 2px solid rgba(255, 0, 0, 0.5);
+}
+
+/* مشغل الصوت */
+.audio-bar audio {
+  width: 700px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+  outline: none;
+  accent-color: #ff0000;
+}
+
+/* شريط التشغيل */
+audio::-webkit-media-controls-panel {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+}
+
+/* الزر */
+audio::-webkit-media-controls-play-button {
+  filter: drop-shadow(0 0 5px red);
+}
+
+audio::-webkit-media-controls-timeline {
+  filter: drop-shadow(0 0 2px red);
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: #ff6666;
+  text-shadow: 0 0 5px red;
+}
+</style>
+    
+    <!-- Enhanced Music Visualizer -->
+    <div class="music-visualizer">
+      <div class="visualizer-container">
+        <!-- Generate 20 columns for the visualizer -->
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+        <div class="colum1"><div class="row"></div></div>
+      </div>
+    </div>
+
+    <!-- Self-description section -->
+    <div class="self-description">
+      <div class="description-box">
+        <h3>About Me</h3>
+        <p>I love programming, video games, and anime, and I love building a family.<br>
+           Come join our Discord server and become part of the family...</p>
+        
+        <div class="family-section">
+          <h4>My Family Is:</h4>
+          <ul class="family-list"> 
+            <li class="family-member">Mr Holmez</li>
+            <li class="family-member">Amine</li>
+            <li class="family-member">Tanjiro</li>
+            <li class="family-member">Cro7taep</li>
+            <li class="family-member">Chawi</li>
+            <li class="family-member">Zaki</li>
+            <li class="family-member">Ya Zaki</li>
+            <li class="family-member">Adell</li>
+            <li class="family-member">Rigo</li>
+            <li class="family-member">Sharky</li>
+            <li class="family-member">Veloura</li>
+            <li class="family-member">Nolove</li>
+            <li class="family-member">Dak</li>
+            <li class="family-member">Bankay</li>
+            <li class="family-member">Hamza</li>
+            <li class="family-member">XLR8</li>
+          </ul>
+        </div>
+        
+        <div class="btn-wrapper">
+          <div class="btn-frame">
+            <button type="button" class="custom-button" onclick="window.open('https://lsgamerz.net/profile/12925-re-kaneki/', '_blank')">My L|S Forums</button>
+            <div class="blob"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer style="text-align: center; padding: 20px; background: rgba(0, 0, 0, 0.3);">
+    <address>enjoy music-player and thx for coming</address>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
