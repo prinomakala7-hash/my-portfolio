@@ -10,6 +10,9 @@
   <meta property="og:url" content="https://prinomakala7-hash.github.io/my-portfolio/">
   <meta name="theme-color" content="#4154ff">
 
+  <!-- ✅ Font Awesome الصحيح (لن تظهر نقاط سوداء بعد الآن) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,22 +26,18 @@
     </div>
   </div>
 
-  <!-- Background video: 8K Ultra High Quality optimized -->
+  <!-- Background video -->
   <video autoplay muted loop playsinline preload="auto" id="bg-video" poster="">
     <source src="" type="video/mp4">
-    Your browser does not support video playback.
   </video>
 
-  <!-- Tubes Cursor Canvas -->
   <canvas id="canvas"></canvas>
 
-  <!-- Secondary Animated Video Background (after mouse effect) -->
-  <video autoplay muted loop playsinline preload="auto" id="secondary-bg-video" poster="">
+  <!-- Secondary Animated Video Background -->
+  <video autoplay muted loop playsinline preload="auto" id="secondary-bg-video">
     <source src="kanekiwall.mp4" type="video/mp4">
-    Your browser does not support video playback.
   </video>
 
-  <!-- Particles (stars) over the video -->
   <div id="particles-js"></div>
 
   <header class="topbar">
@@ -46,53 +45,50 @@
   </header>
 
   <main class="content">
-    <!-- Avatar: can be .jpg/.png or .gif -->
-    <!-- -- تعليق عربي: غيّر src إلى رابط صورتك أو اسم الملف داخل المجلد -- -->
+
     <img class="avatar" src="kaneki.gif" alt="My Photo">
 
-    <!-- Intro text -->
     <h2>Welcome to my profile Re kaneki </h2>
     <p>If you want to join our family in Discord, join below. .</p>
 
     <!-- Discord card -->
     <section class="discord-card">
       <h3>Join our Discord</h3>
-      <img id="server-icon" class="server-img" src="your-server-image.png" alt="Server Icon" style="display:block">
+      <img id="server-icon" class="server-img" src="your-server-image.png">
       <p id="server-name">My Server</p>
       <a id="invite-link" href="https://discord.gg/4XtJvqGB" target="_blank" class="join-btn">🎮 Welcome to Discord</a>
     </section>
 
-    <!-- Glowing Social Icons -->
+    <!-- ✅ Glowing Social Icons (تم إصلاحها) -->
     <section class="social-icons-container">
       <a href="https://www.instagram.com/real_moriarty/" target="_blank">
-        <i class="fa fa-instagram" id="instagram"></i>
+        <i class="fa-brands fa-instagram" id="instagram"></i>
       </a>
       <a href="https://www.youtube.com/@HamzaGamesTY" target="_blank">
-        <i class="fa fa-youtube-play" id="youtube"></i>
+        <i class="fa-brands fa-youtube" id="youtube"></i>
       </a>
       <a href="https://www.tiktok.com/@hamzagamesty" target="_blank">
-        <i class="fa fa-tiktok" id="tiktok"></i>
+        <i class="fa-brands fa-tiktok" id="tiktok"></i>
       </a>
     </section>
-
-    <!-- Music player visible -->
-    <!-- Called of font style  file -->
 
 <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
 
 
-    <!-- 🎵 Custom Red Themed Audio Player -->
-<h2>Wellcome to Rofa Music store</h2>
-<div class="container-audio">
-  
-  <!-- 👇 أضف هذا السطر لعرض الجيف -->
+<!-- 🎵 Custom Red Themed Audio Player -->
+<!-- 🎵 Custom Red Themed Audio Player -->
+<h2>Welcome to Rofa Music store</h2>
+<div class="custom-audio-player">
+  <!-- صورة جانبية -->
   <img src="toka.gif" alt="Music cover" class="music-cover">
 
-  <audio controls loop>
+  <!-- مشغّل الصوت -->
+  <div class="audio-bar">
+    <audio id="player" controls loop>
       <source src="taftaf.mp3" type="audio/mp3">
-      Your browser does not support the audio tag
-  </audio>
-</div>
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
 </div>
 
 <style>
@@ -160,32 +156,30 @@ audio::-webkit-media-controls-time-remaining-display {
   text-shadow: 0 0 5px red;
 }
 </style>
-    
-    <!-- Enhanced Music Visualizer -->
-    <div class="music-visualizer">
-      <div class="visualizer-container">
-        <!-- Generate 20 columns for the visualizer -->
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-        <div class="colum1"><div class="row"></div></div>
-      </div>
-    </div>
+
+
+<!-- Enhanced Music Visualizer -->
+<div class="music-visualizer">
+  <div class="visualizer-container">
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+    <div class="colum1"><div class="row"></div></div>
+  </div>
+</div>
+
+    <!-- باقي السكربت كما هو بدون أي تعديل -->
 
     <!-- Self-description section -->
     <div class="self-description">
