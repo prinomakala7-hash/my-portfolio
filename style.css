@@ -990,3 +990,8 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
     background-position: 400% 0;
   }
 }
+/* ===== Custom Font (Orbitron) ===== */
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+}
